@@ -1,6 +1,6 @@
 # Build a JAR File
 
-ROM eclipse-temurin:17-jdk-jammy
+FROM eclipse-temurin:17-jdk-jammy
 
 WORKDIR /app
 
