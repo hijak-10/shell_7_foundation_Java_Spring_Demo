@@ -7,5 +7,5 @@ RUN mvn -f /home/app/pom.xml clean package
 # Create an Image
 FROM openjdk:8-jdk-alpine
 EXPOSE 5000
-COPY --from=stage1 /home/app/target/hello-world-java.jar hello-world-java.jar
+COPY --from=stage1 /home/app/target/shell_7_foundation_Java_Spring_Demo.jar shell_7_foundation_Java_Spring_Demo.jar
 ENTRYPOINT ["sh", "-c", "java -jar /hello-world-java.jar"]
