@@ -34,12 +34,11 @@ jobs:
       run: mvn clean install -DskipTests --file pom.xml
 
 
-    - name: Build Docker Image
-      run: docker build -t himanshujakhmola/shelldemo:0.0.1.Release .
+
 
     - name: Login to Docker Hub
       run: docker login -u himanshujakhmola -p Great guy@89
     - name: Push Docker Image
-      run: docker push himanshujakhmola/shelldemo:0.0.1.Release 
+      run: docker push himanshujakhmola/shellpp::0.0.1.Release 
       
   
