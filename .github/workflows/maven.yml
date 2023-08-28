@@ -45,6 +45,6 @@ jobs:
         username: ${{ secrets.NAME }}
         password: ${{ secrets.PASS }}
     - name: Push Docker Image
-      run: docker push himanshujakhmola/hello-world-java:0.0.1.Release 
+      run: docker push himanshujakhmola/shell_7_foundation_Java_Spring_Demo:0.0.1.Release 
       
   
